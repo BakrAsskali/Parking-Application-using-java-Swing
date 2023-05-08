@@ -5,10 +5,16 @@ public class Voiture implements Runnable {
 
     String nom;
     Parking park;
+    int xInit;
+    int yInit;
+    int xFinal;
+    int yFinal;
 
-    public Voiture(String name, Parking park) {
+    public Voiture(String name, Parking park, int x, int y) {
         this.nom = name;
         this.park = park;
+        this.xInit = x;
+        this.yInit = y;
     }
 
     public void run() {
@@ -35,15 +41,59 @@ public class Voiture implements Runnable {
         }
     }
 
+    public void setInit(int x, int y) {
+        this.xInit = x;
+        this.yInit = y;
+    }
+
+    public void setFinal(int x, int y) {
+        this.xFinal = x;
+        this.yFinal = y;
+    }
+
+    public int getxInit() {
+        return xInit;
+    }
+
+    public int getyInit() {
+        return yInit;
+    }
+
+    public int getxFinal() {
+        return xFinal;
+    }
+
+    public int getyFinal() {
+        return yFinal;
+    }
+
+    public int[] getInit() {
+        int[] tab = { xInit, yInit };
+        return tab;
+    }
+
+    public int[] getFinal() {
+        int[] tab = { xFinal, yFinal };
+        return tab;
+    }
+
     public static void main(String[] args) {
         ParkingUI parking = new ParkingUI();
         Parking park = new Parking(24);
         int nbVoitures = 50;
         Thread[] voitures = new Thread[nbVoitures];
         for (int i = 0; i < nbVoitures; i++) {
-            voitures[i] = new Thread(new Voiture("Voiture " + i, park));
+            voitures[i] = new Thread(new Voiture("Voiture " + i, park, 0, 0));
             voitures[i].start();
             ParkingUI.draw();
         }
+    }
+
+    public void setxInit(int x) {
+        this.xInit = x;
+    }
+
+    public void setyInit(int y) {
+        this.yInit = y;
     }
 }

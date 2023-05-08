@@ -43,10 +43,11 @@ public class Parking {
         this.PlacesOccupees--;
         infoVoitures.remove(myVoit);
         System.out.format("Parking: %s est sortie, il reste %d places \n", myVoit.nom, this.places());
-        for (int i = 0, j = 0; i < ParkingUI.tabParking.length; i++) {
-            if (ParkingUI.tabParking[i] == myVoit) {
+        for (int i = 0; i < ParkingUI.tabParking.length; i++) {
+            if (ParkingUI.tabParking[i].nom == myVoit.nom) {
                 ParkingUI.tabParking[i] = null;
                 ParkingUI.parkingLabels[i].setIcon(null);
+                ParkingUI.parkingLabels[i].setLocation(0, 0);
                 break;
             }
         }

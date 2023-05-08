@@ -1,3 +1,5 @@
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import javax.swing.*;
 
 /**
@@ -43,83 +45,878 @@ public class ParkingUI extends javax.swing.JFrame {
                 parkingLabels[i].setIcon(null);
             } else {
                 parkingLabels[i].setIcon(new javax.swing.ImageIcon("Voiture.png"));
-                switch (i) {
-                    case 0:
-                        parkingLabels[i].setBounds(15, -310, 1058, 794);
-                        break;
-                    case 1:
-                        parkingLabels[i].setBounds(15, -219, 1058, 794);
-                        break;
-                    case 2:
-                        parkingLabels[i].setBounds(15, -127, 1058, 794);
-                        break;
-                    case 3:
-                        parkingLabels[i].setBounds(350, -310, 1058, 794);
-                        break;
-                    case 4:
-                        parkingLabels[i].setBounds(350, -219, 1058, 794);
-                        break;
-                    case 5:
-                        parkingLabels[i].setBounds(350, -127, 1058, 794);
-                        break;
-                    case 6:
-                        parkingLabels[i].setBounds(550, -310, 1058, 794);
-                        break;
-                    case 7:
-                        parkingLabels[i].setBounds(550, -219, 1058, 794);
-                        break;
-                    case 8:
-                        parkingLabels[i].setBounds(550, -127, 1058, 794);
-                        break;
-                    case 9:
-                        parkingLabels[i].setBounds(900, -310, 1058, 794);
-                        break;
-                    case 10:
-                        parkingLabels[i].setBounds(900, -219, 1058, 794);
-                        break;
-                    case 11:
-                        parkingLabels[i].setBounds(900, -127, 1058, 794);
-                        break;
-                    case 12:
-                        parkingLabels[i].setBounds(15, 123, 1058, 794);
-                        break;
-
-                    case 13:
-                        parkingLabels[i].setBounds(15, 215, 1058, 794);
-                        break;
-                    case 14:
-                        parkingLabels[i].setBounds(15, 310, 1058, 794);
-                        break;
-                    case 15:
-                        parkingLabels[i].setBounds(350, 123, 1058, 794);
-                        break;
-                    case 16:
-                        parkingLabels[i].setBounds(350, 215, 1058, 794);
-                        break;
-                    case 17:
-                        parkingLabels[i].setBounds(350, 310, 1058, 794);
-                        break;
-                    case 18:
-                        parkingLabels[i].setBounds(550, 123, 1058, 794);
-                        break;
-                    case 19:
-                        parkingLabels[i].setBounds(550, 215, 1058, 794);
-                        break;
-                    case 20:
-                        parkingLabels[i].setBounds(550, 310, 1058, 794);
-                        break;
-                    case 21:
-                        parkingLabels[i].setBounds(900, 123, 1058, 794);
-                        break;
-                    case 22:
-                        parkingLabels[i].setBounds(900, 215, 1058, 794);
-                        break;
-                    case 23:
-                        parkingLabels[i].setBounds(900, 310, 1058, 794);
-                        break;
+                parkingLabels[i].setBounds(v.getxInit(), v.getyInit(), 1058, 794);
+                int xstep, ystep;
+                if (v.getInit() != v.getFinal()) {
+                    switch (i) {
+                        case 0:
+                            v.setFinal(15, -310);
+                            for (int j = 0; j < 10; j++) {
+                                xstep = (v.getxFinal() - v.getxInit()) / 10;
+                                ystep = (v.getyFinal() - v.getyInit()) / 10;
+                                if (v.yInit > -310) {
+                                    while (v.xInit < 200) {
+                                        v.xInit += xstep;
+                                        parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
+                                        try {
+                                            Thread.sleep(25);
+                                        } catch (InterruptedException e) {
+                                            e.printStackTrace();
+                                        }
+                                    }
+                                }
+                                while (v.yInit > -310) {
+                                    v.yInit += ystep;
+                                    parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
+                                    try {
+                                        Thread.sleep(25);
+                                    } catch (InterruptedException e) {
+                                        e.printStackTrace();
+                                    }
+                                }
+                                while (v.xInit > 15) {
+                                    v.xInit -= xstep;
+                                    parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
+                                    try {
+                                        Thread.sleep(25);
+                                    } catch (InterruptedException e) {
+                                        e.printStackTrace();
+                                    }
+                                }
+                            }
+                            break;
+                        case 1:
+                            v.setFinal(15, -219);
+                            for (int j = 0; j < 10; j++) {
+                                xstep = (v.getxFinal() - v.getxInit()) / 10;
+                                ystep = (v.getyFinal() - v.getyInit()) / 10;
+                                if (v.yInit > -219) {
+                                    while (v.xInit < 200) {
+                                        v.xInit += xstep;
+                                        parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
+                                        try {
+                                            Thread.sleep(25);
+                                        } catch (InterruptedException e) {
+                                            e.printStackTrace();
+                                        }
+                                    }
+                                }
+                                while (v.yInit > -219) {
+                                    v.yInit += ystep;
+                                    parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
+                                    try {
+                                        Thread.sleep(25);
+                                    } catch (InterruptedException e) {
+                                        e.printStackTrace();
+                                    }
+                                }
+                                while (v.xInit > 15) {
+                                    v.xInit -= xstep;
+                                    parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
+                                    try {
+                                        Thread.sleep(25);
+                                    } catch (InterruptedException e) {
+                                        e.printStackTrace();
+                                    }
+                                }
+                            }
+                            break;
+                        case 2:
+                            v.setFinal(15, -128);
+                            for (int j = 0; j < 10; j++) {
+                                xstep = (v.getxFinal() - v.getxInit()) / 10;
+                                ystep = (v.getyFinal() - v.getyInit()) / 10;
+                                if (v.yInit > -128) {
+                                    while (v.xInit < 200) {
+                                        v.xInit += xstep;
+                                        parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
+                                        try {
+                                            Thread.sleep(25);
+                                        } catch (InterruptedException e) {
+                                            e.printStackTrace();
+                                        }
+                                    }
+                                }
+                                while (v.yInit > -128) {
+                                    v.yInit += ystep;
+                                    parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
+                                    try {
+                                        Thread.sleep(25);
+                                    } catch (InterruptedException e) {
+                                        e.printStackTrace();
+                                    }
+                                }
+                                while (v.xInit > 15) {
+                                    v.xInit -= xstep;
+                                    parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
+                                    try {
+                                        Thread.sleep(25);
+                                    } catch (InterruptedException e) {
+                                        e.printStackTrace();
+                                    }
+                                }
+                            }
+                            break;
+                        case 3:
+                            v.setFinal(350, -310);
+                            for (int j = 0; j < 10; j++) {
+                                xstep = (v.getxFinal() - v.getxInit()) / 10;
+                                ystep = (v.getyFinal() - v.getyInit()) / 10;
+                                if (v.yInit > -310) {
+                                    while (v.xInit < 200) {
+                                        v.xInit += xstep;
+                                        parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
+                                        try {
+                                            Thread.sleep(25);
+                                        } catch (InterruptedException e) {
+                                            e.printStackTrace();
+                                        }
+                                    }
+                                }
+                                while (v.yInit > -310) {
+                                    v.yInit += ystep;
+                                    parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
+                                    try {
+                                        Thread.sleep(25);
+                                    } catch (InterruptedException e) {
+                                        e.printStackTrace();
+                                    }
+                                }
+                                while (v.xInit < 350) {
+                                    v.xInit += xstep;
+                                    parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
+                                    try {
+                                        Thread.sleep(25);
+                                    } catch (InterruptedException e) {
+                                        e.printStackTrace();
+                                    }
+                                }
+                            }
+                            break;
+                        case 4:
+                            v.setFinal(350, -219);
+                            for (int j = 0; j < 10; j++) {
+                                xstep = (v.getxFinal() - v.getxInit()) / 10;
+                                ystep = (v.getyFinal() - v.getyInit()) / 10;
+                                if (v.yInit > -219) {
+                                    while (v.xInit < 200) {
+                                        v.xInit += xstep;
+                                        parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
+                                        try {
+                                            Thread.sleep(25);
+                                        } catch (InterruptedException e) {
+                                            e.printStackTrace();
+                                        }
+                                    }
+                                }
+                                while (v.yInit > -219) {
+                                    v.yInit += ystep;
+                                    parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
+                                    try {
+                                        Thread.sleep(25);
+                                    } catch (InterruptedException e) {
+                                        e.printStackTrace();
+                                    }
+                                }
+                                while (v.xInit < 350) {
+                                    v.xInit += xstep;
+                                    parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
+                                    try {
+                                        Thread.sleep(25);
+                                    } catch (InterruptedException e) {
+                                        e.printStackTrace();
+                                    }
+                                }
+                            }
+                            break;
+                        case 5:
+                            v.setFinal(350, -128);
+                            for (int j = 0; j < 10; j++) {
+                                xstep = (v.getxFinal() - v.getxInit()) / 10;
+                                ystep = (v.getyFinal() - v.getyInit()) / 10;
+                                if (v.yInit > -128) {
+                                    while (v.xInit < 200) {
+                                        v.xInit += xstep;
+                                        parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
+                                        try {
+                                            Thread.sleep(25);
+                                        } catch (InterruptedException e) {
+                                            e.printStackTrace();
+                                        }
+                                    }
+                                }
+                                while (v.yInit > -128) {
+                                    v.yInit += ystep;
+                                    parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
+                                    try {
+                                        Thread.sleep(25);
+                                    } catch (InterruptedException e) {
+                                        e.printStackTrace();
+                                    }
+                                }
+                                while (v.xInit < 350) {
+                                    v.xInit += xstep;
+                                    parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
+                                    try {
+                                        Thread.sleep(25);
+                                    } catch (InterruptedException e) {
+                                        e.printStackTrace();
+                                    }
+                                }
+                            }
+                            break;
+                        case 6:
+                            v.setFinal(550, -310);
+                            for (int j = 0; j < 10; j++) {
+                                xstep = (v.getxFinal() - v.getxInit()) / 10;
+                                ystep = (v.getyFinal() - v.getyInit()) / 10;
+                                if (v.yInit > -310) {
+                                    while (v.xInit < 750) {
+                                        v.xInit += xstep;
+                                        parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
+                                        try {
+                                            Thread.sleep(25);
+                                        } catch (InterruptedException e) {
+                                            e.printStackTrace();
+                                        }
+                                    }
+                                }
+                                while (v.yInit > -310) {
+                                    v.yInit += ystep;
+                                    parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
+                                    try {
+                                        Thread.sleep(25);
+                                    } catch (InterruptedException e) {
+                                        e.printStackTrace();
+                                    }
+                                }
+                                while (v.xInit > 550) {
+                                    v.xInit -= xstep;
+                                    parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
+                                    try {
+                                        Thread.sleep(25);
+                                    } catch (InterruptedException e) {
+                                        e.printStackTrace();
+                                    }
+                                }
+                            }
+                            break;
+                        case 7:
+                            v.setFinal(550, -219);
+                            for (int j = 0; j < 10; j++) {
+                                xstep = (v.getxFinal() - v.getxInit()) / 10;
+                                ystep = (v.getyFinal() - v.getyInit()) / 10;
+                                if (v.yInit > -219) {
+                                    while (v.xInit < 750) {
+                                        v.xInit += xstep;
+                                        parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
+                                        try {
+                                            Thread.sleep(25);
+                                        } catch (InterruptedException e) {
+                                            e.printStackTrace();
+                                        }
+                                    }
+                                }
+                                while (v.yInit > -219) {
+                                    v.yInit += ystep;
+                                    parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
+                                    try {
+                                        Thread.sleep(25);
+                                    } catch (InterruptedException e) {
+                                        e.printStackTrace();
+                                    }
+                                }
+                                while (v.xInit > 550) {
+                                    v.xInit -= xstep;
+                                    parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
+                                    try {
+                                        Thread.sleep(25);
+                                    } catch (InterruptedException e) {
+                                        e.printStackTrace();
+                                    }
+                                }
+                            }
+                            break;
+                        case 8:
+                            v.setFinal(550, -128);
+                            for (int j = 0; j < 10; j++) {
+                                xstep = (v.getxFinal() - v.getxInit()) / 10;
+                                ystep = (v.getyFinal() - v.getyInit()) / 10;
+                                if (v.yInit > -128) {
+                                    while (v.xInit < 750) {
+                                        v.xInit += xstep;
+                                        parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
+                                        try {
+                                            Thread.sleep(25);
+                                        } catch (InterruptedException e) {
+                                            e.printStackTrace();
+                                        }
+                                    }
+                                }
+                                while (v.yInit > -128) {
+                                    v.yInit += ystep;
+                                    parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
+                                    try {
+                                        Thread.sleep(25);
+                                    } catch (InterruptedException e) {
+                                        e.printStackTrace();
+                                    }
+                                }
+                                while (v.xInit > 550) {
+                                    v.xInit -= xstep;
+                                    parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
+                                    try {
+                                        Thread.sleep(25);
+                                    } catch (InterruptedException e) {
+                                        e.printStackTrace();
+                                    }
+                                }
+                            }
+                            break;
+                        case 9:
+                            v.setFinal(900, -310);
+                            for (int j = 0; j < 10; j++) {
+                                xstep = (v.getxFinal() - v.getxInit()) / 10;
+                                ystep = (v.getyFinal() - v.getyInit()) / 10;
+                                if (v.yInit > -310) {
+                                    while (v.xInit < 750) {
+                                        v.xInit += xstep;
+                                        parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
+                                        try {
+                                            Thread.sleep(25);
+                                        } catch (InterruptedException e) {
+                                            e.printStackTrace();
+                                        }
+                                    }
+                                }
+                                while (v.yInit > -310) {
+                                    v.yInit += ystep;
+                                    parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
+                                    try {
+                                        Thread.sleep(25);
+                                    } catch (InterruptedException e) {
+                                        e.printStackTrace();
+                                    }
+                                }
+                                while (v.xInit < 900) {
+                                    v.xInit += xstep;
+                                    parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
+                                    try {
+                                        Thread.sleep(25);
+                                    } catch (InterruptedException e) {
+                                        e.printStackTrace();
+                                    }
+                                }
+                            }
+                            break;
+                        case 10:
+                            v.setFinal(900, -219);
+                            for (int j = 0; j < 10; j++) {
+                                xstep = (v.getxFinal() - v.getxInit()) / 10;
+                                ystep = (v.getyFinal() - v.getyInit()) / 10;
+                                if (v.yInit > -219) {
+                                    while (v.xInit < 750) {
+                                        v.xInit += xstep;
+                                        parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
+                                        try {
+                                            Thread.sleep(25);
+                                        } catch (InterruptedException e) {
+                                            e.printStackTrace();
+                                        }
+                                    }
+                                }
+                                while (v.yInit > -219) {
+                                    v.yInit += ystep;
+                                    parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
+                                    try {
+                                        Thread.sleep(25);
+                                    } catch (InterruptedException e) {
+                                        e.printStackTrace();
+                                    }
+                                }
+                                while (v.xInit < 900) {
+                                    v.xInit += xstep;
+                                    parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
+                                    try {
+                                        Thread.sleep(25);
+                                    } catch (InterruptedException e) {
+                                        e.printStackTrace();
+                                    }
+                                }
+                            }
+                            break;
+                        case 11:
+                            v.setFinal(900, -128);
+                            for (int j = 0; j < 10; j++) {
+                                xstep = (v.getxFinal() - v.getxInit()) / 10;
+                                ystep = (v.getyFinal() - v.getyInit()) / 10;
+                                if (v.yInit > -128) {
+                                    while (v.xInit < 750) {
+                                        v.xInit += xstep;
+                                        parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
+                                        try {
+                                            Thread.sleep(25);
+                                        } catch (InterruptedException e) {
+                                            e.printStackTrace();
+                                        }
+                                    }
+                                }
+                                while (v.yInit > -128) {
+                                    v.yInit += ystep;
+                                    parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
+                                    try {
+                                        Thread.sleep(25);
+                                    } catch (InterruptedException e) {
+                                        e.printStackTrace();
+                                    }
+                                }
+                                while (v.xInit < 900) {
+                                    v.xInit += xstep;
+                                    parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
+                                    try {
+                                        Thread.sleep(25);
+                                    } catch (InterruptedException e) {
+                                        e.printStackTrace();
+                                    }
+                                }
+                            }
+                            break;
+                        case 12:
+                            v.setFinal(15, 123);
+                            for (int j = 0; j < 10; j++) {
+                                xstep = (v.getxFinal() - v.getxInit()) / 10;
+                                ystep = (v.getyFinal() - v.getyInit()) / 10;
+                                if (v.yInit < 123) {
+                                    while (v.xInit < 200) {
+                                        v.xInit += xstep;
+                                        parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
+                                        try {
+                                            Thread.sleep(25);
+                                        } catch (InterruptedException e) {
+                                            e.printStackTrace();
+                                        }
+                                    }
+                                }
+                                while (v.yInit < 123) {
+                                    v.yInit += ystep;
+                                    parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
+                                    try {
+                                        Thread.sleep(25);
+                                    } catch (InterruptedException e) {
+                                        e.printStackTrace();
+                                    }
+                                }
+                                while (v.xInit > 15) {
+                                    v.xInit -= xstep;
+                                    parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
+                                    try {
+                                        Thread.sleep(25);
+                                    } catch (InterruptedException e) {
+                                        e.printStackTrace();
+                                    }
+                                }
+                            }
+                            break;
+                        case 13:
+                            v.setFinal(15, 214);
+                            for (int j = 0; j < 10; j++) {
+                                xstep = (v.getxFinal() - v.getxInit()) / 10;
+                                ystep = (v.getyFinal() - v.getyInit()) / 10;
+                                if (v.yInit < 214) {
+                                    while (v.xInit < 200) {
+                                        v.xInit += xstep;
+                                        parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
+                                        try {
+                                            Thread.sleep(25);
+                                        } catch (InterruptedException e) {
+                                            e.printStackTrace();
+                                        }
+                                    }
+                                }
+                                while (v.yInit < 214) {
+                                    v.yInit += ystep;
+                                    parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
+                                    try {
+                                        Thread.sleep(25);
+                                    } catch (InterruptedException e) {
+                                        e.printStackTrace();
+                                    }
+                                }
+                                while (v.xInit > 15) {
+                                    v.xInit -= xstep;
+                                    parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
+                                    try {
+                                        Thread.sleep(25);
+                                    } catch (InterruptedException e) {
+                                        e.printStackTrace();
+                                    }
+                                }
+                            }
+                            break;
+                        case 14:
+                            v.setFinal(15, 310);
+                            for (int j = 0; j < 10; j++) {
+                                xstep = (v.getxFinal() - v.getxInit()) / 10;
+                                ystep = (v.getyFinal() - v.getyInit()) / 10;
+                                if (v.yInit < 310) {
+                                    while (v.xInit < 200) {
+                                        v.xInit += xstep;
+                                        parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
+                                        try {
+                                            Thread.sleep(25);
+                                        } catch (InterruptedException e) {
+                                            e.printStackTrace();
+                                        }
+                                    }
+                                }
+                                while (v.yInit < 310) {
+                                    v.yInit += ystep;
+                                    parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
+                                    try {
+                                        Thread.sleep(25);
+                                    } catch (InterruptedException e) {
+                                        e.printStackTrace();
+                                    }
+                                }
+                                while (v.xInit > 15) {
+                                    v.xInit -= xstep;
+                                    parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
+                                    try {
+                                        Thread.sleep(25);
+                                    } catch (InterruptedException e) {
+                                        e.printStackTrace();
+                                    }
+                                }
+                            }
+                            break;
+                        case 15:
+                            v.setFinal(350, 123);
+                            for (int j = 0; j < 10; j++) {
+                                xstep = (v.getxFinal() - v.getxInit()) / 10;
+                                ystep = (v.getyFinal() - v.getyInit()) / 10;
+                                if (v.yInit < 123) {
+                                    while (v.xInit < 200) {
+                                        v.xInit += xstep;
+                                        parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
+                                        try {
+                                            Thread.sleep(25);
+                                        } catch (InterruptedException e) {
+                                            e.printStackTrace();
+                                        }
+                                    }
+                                }
+                                while (v.yInit < 123) {
+                                    v.yInit += ystep;
+                                    parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
+                                    try {
+                                        Thread.sleep(25);
+                                    } catch (InterruptedException e) {
+                                        e.printStackTrace();
+                                    }
+                                }
+                                while (v.xInit < 350) {
+                                    v.xInit += xstep;
+                                    parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
+                                    try {
+                                        Thread.sleep(25);
+                                    } catch (InterruptedException e) {
+                                        e.printStackTrace();
+                                    }
+                                }
+                            }
+                            break;
+                        case 16:
+                            v.setFinal(350, 214);
+                            for (int j = 0; j < 10; j++) {
+                                xstep = (v.getxFinal() - v.getxInit()) / 10;
+                                ystep = (v.getyFinal() - v.getyInit()) / 10;
+                                if (v.yInit < 214) {
+                                    while (v.xInit < 200) {
+                                        v.xInit += xstep;
+                                        parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
+                                        try {
+                                            Thread.sleep(25);
+                                        } catch (InterruptedException e) {
+                                            e.printStackTrace();
+                                        }
+                                    }
+                                }
+                                while (v.yInit < 214) {
+                                    v.yInit += ystep;
+                                    parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
+                                    try {
+                                        Thread.sleep(25);
+                                    } catch (InterruptedException e) {
+                                        e.printStackTrace();
+                                    }
+                                }
+                                while (v.xInit < 350) {
+                                    v.xInit += xstep;
+                                    parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
+                                    try {
+                                        Thread.sleep(25);
+                                    } catch (InterruptedException e) {
+                                        e.printStackTrace();
+                                    }
+                                }
+                            }
+                            break;
+                        case 17:
+                            v.setFinal(350, 310);
+                            for (int j = 0; j < 10; j++) {
+                                xstep = (v.getxFinal() - v.getxInit()) / 10;
+                                ystep = (v.getyFinal() - v.getyInit()) / 10;
+                                if (v.yInit < 310) {
+                                    while (v.xInit < 200) {
+                                        v.xInit += xstep;
+                                        parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
+                                        try {
+                                            Thread.sleep(25);
+                                        } catch (InterruptedException e) {
+                                            e.printStackTrace();
+                                        }
+                                    }
+                                }
+                                while (v.yInit < 310) {
+                                    v.yInit += ystep;
+                                    parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
+                                    try {
+                                        Thread.sleep(25);
+                                    } catch (InterruptedException e) {
+                                        e.printStackTrace();
+                                    }
+                                }
+                                while (v.xInit < 350) {
+                                    v.xInit += xstep;
+                                    parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
+                                    try {
+                                        Thread.sleep(25);
+                                    } catch (InterruptedException e) {
+                                        e.printStackTrace();
+                                    }
+                                }
+                            }
+                            break;
+                        case 18:
+                            v.setFinal(550, 123);
+                            for (int j = 0; j < 10; j++) {
+                                xstep = (v.getxFinal() - v.getxInit()) / 10;
+                                ystep = (v.getyFinal() - v.getyInit()) / 10;
+                                if (v.yInit < 123) {
+                                    while (v.xInit < 750) {
+                                        v.xInit += xstep;
+                                        parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
+                                        try {
+                                            Thread.sleep(25);
+                                        } catch (InterruptedException e) {
+                                            e.printStackTrace();
+                                        }
+                                    }
+                                }
+                                while (v.yInit < 123) {
+                                    v.yInit += ystep;
+                                    parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
+                                    try {
+                                        Thread.sleep(25);
+                                    } catch (InterruptedException e) {
+                                        e.printStackTrace();
+                                    }
+                                }
+                                while (v.xInit > 550) {
+                                    v.xInit -= xstep;
+                                    parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
+                                    try {
+                                        Thread.sleep(25);
+                                    } catch (InterruptedException e) {
+                                        e.printStackTrace();
+                                    }
+                                }
+                            }
+                            break;
+                        case 19:
+                            v.setFinal(550, 214);
+                            for (int j = 0; j < 10; j++) {
+                                xstep = (v.getxFinal() - v.getxInit()) / 10;
+                                ystep = (v.getyFinal() - v.getyInit()) / 10;
+                                if (v.yInit < 214) {
+                                    while (v.xInit < 750) {
+                                        v.xInit += xstep;
+                                        parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
+                                        try {
+                                            Thread.sleep(25);
+                                        } catch (InterruptedException e) {
+                                            e.printStackTrace();
+                                        }
+                                    }
+                                }
+                                while (v.yInit < 214) {
+                                    v.yInit += ystep;
+                                    parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
+                                    try {
+                                        Thread.sleep(25);
+                                    } catch (InterruptedException e) {
+                                        e.printStackTrace();
+                                    }
+                                }
+                                while (v.xInit > 550) {
+                                    v.xInit -= xstep;
+                                    parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
+                                    try {
+                                        Thread.sleep(25);
+                                    } catch (InterruptedException e) {
+                                        e.printStackTrace();
+                                    }
+                                }
+                            }
+                            break;
+                        case 20:
+                            v.setFinal(550, 310);
+                            for (int j = 0; j < 10; j++) {
+                                xstep = (v.getxFinal() - v.getxInit()) / 10;
+                                ystep = (v.getyFinal() - v.getyInit()) / 10;
+                                if (v.yInit < 310) {
+                                    while (v.xInit < 750) {
+                                        v.xInit += xstep;
+                                        parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
+                                        try {
+                                            Thread.sleep(25);
+                                        } catch (InterruptedException e) {
+                                            e.printStackTrace();
+                                        }
+                                    }
+                                }
+                                while (v.yInit < 310) {
+                                    v.yInit += ystep;
+                                    parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
+                                    try {
+                                        Thread.sleep(25);
+                                    } catch (InterruptedException e) {
+                                        e.printStackTrace();
+                                    }
+                                }
+                                while (v.xInit > 550) {
+                                    v.xInit -= xstep;
+                                    parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
+                                    try {
+                                        Thread.sleep(25);
+                                    } catch (InterruptedException e) {
+                                        e.printStackTrace();
+                                    }
+                                }
+                            }
+                            break;
+                        case 21:
+                            v.setFinal(900, 123);
+                            for (int j = 0; j < 10; j++) {
+                                xstep = (v.getxFinal() - v.getxInit()) / 10;
+                                ystep = (v.getyFinal() - v.getyInit()) / 10;
+                                if (v.yInit < 123) {
+                                    while (v.xInit < 750) {
+                                        v.xInit += xstep;
+                                        parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
+                                        try {
+                                            Thread.sleep(25);
+                                        } catch (InterruptedException e) {
+                                            e.printStackTrace();
+                                        }
+                                    }
+                                }
+                                while (v.yInit < 123) {
+                                    v.yInit += ystep;
+                                    parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
+                                    try {
+                                        Thread.sleep(25);
+                                    } catch (InterruptedException e) {
+                                        e.printStackTrace();
+                                    }
+                                }
+                                while (v.xInit < 900) {
+                                    v.xInit += xstep;
+                                    parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
+                                    try {
+                                        Thread.sleep(25);
+                                    } catch (InterruptedException e) {
+                                        e.printStackTrace();
+                                    }
+                                }
+                            }
+                            break;
+                        case 22:
+                            v.setFinal(900, 214);
+                            for (int j = 0; j < 10; j++) {
+                                xstep = (v.getxFinal() - v.getxInit()) / 10;
+                                ystep = (v.getyFinal() - v.getyInit()) / 10;
+                                if (v.yInit < 214) {
+                                    while (v.xInit < 750) {
+                                        v.xInit += xstep;
+                                        parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
+                                        try {
+                                            Thread.sleep(25);
+                                        } catch (InterruptedException e) {
+                                            e.printStackTrace();
+                                        }
+                                    }
+                                }
+                                while (v.yInit < 214) {
+                                    v.yInit += ystep;
+                                    parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
+                                    try {
+                                        Thread.sleep(25);
+                                    } catch (InterruptedException e) {
+                                        e.printStackTrace();
+                                    }
+                                }
+                                while (v.xInit < 900) {
+                                    v.xInit += xstep;
+                                    parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
+                                    try {
+                                        Thread.sleep(25);
+                                    } catch (InterruptedException e) {
+                                        e.printStackTrace();
+                                    }
+                                }
+                            }
+                            break;
+                        case 23:
+                            v.setFinal(900, 310);
+                            for (int j = 0; j < 10; j++) {
+                                xstep = (v.getxFinal() - v.getxInit()) / 10;
+                                ystep = (v.getyFinal() - v.getyInit()) / 10;
+                                if (v.yInit < 310) {
+                                    while (v.xInit < 750) {
+                                        v.xInit += xstep;
+                                        parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
+                                        try {
+                                            Thread.sleep(25);
+                                        } catch (InterruptedException e) {
+                                            e.printStackTrace();
+                                        }
+                                    }
+                                }
+                                while (v.yInit < 310) {
+                                    v.yInit += ystep;
+                                    parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
+                                    try {
+                                        Thread.sleep(25);
+                                    } catch (InterruptedException e) {
+                                        e.printStackTrace();
+                                    }
+                                }
+                                while (v.xInit < 900) {
+                                    v.xInit += xstep;
+                                    parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
+                                    try {
+                                        Thread.sleep(25);
+                                    } catch (InterruptedException e) {
+                                        e.printStackTrace();
+                                    }
+                                }
+                            }
+                            break;
+                    }
                 }
+
             }
         }
     }
-
 }
