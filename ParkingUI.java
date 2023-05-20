@@ -1,5 +1,3 @@
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import javax.swing.*;
 
 /**
@@ -52,8 +50,8 @@ public class ParkingUI extends javax.swing.JFrame {
                         case 0:
                             v.setFinal(15, -310);
                             for (int j = 0; j < 10; j++) {
-                                xstep = (v.getxFinal() - v.getxInit()) / 10;
-                                ystep = (v.getyFinal() - v.getyInit()) / 10;
+                                xstep = (v.getxFinal() - v.getxInit()) / 15;
+                                ystep = (v.getyFinal() - v.getyInit()) / 15;
                                 if (v.yInit > -310) {
                                     while (v.xInit < 200) {
                                         v.xInit += xstep;
@@ -88,8 +86,8 @@ public class ParkingUI extends javax.swing.JFrame {
                         case 1:
                             v.setFinal(15, -219);
                             for (int j = 0; j < 10; j++) {
-                                xstep = (v.getxFinal() - v.getxInit()) / 10;
-                                ystep = (v.getyFinal() - v.getyInit()) / 10;
+                                xstep = (v.getxFinal() - v.getxInit()) / 15;
+                                ystep = (v.getyFinal() - v.getyInit()) / 15;
                                 if (v.yInit > -219) {
                                     while (v.xInit < 200) {
                                         v.xInit += xstep;
@@ -124,8 +122,8 @@ public class ParkingUI extends javax.swing.JFrame {
                         case 2:
                             v.setFinal(15, -128);
                             for (int j = 0; j < 10; j++) {
-                                xstep = (v.getxFinal() - v.getxInit()) / 10;
-                                ystep = (v.getyFinal() - v.getyInit()) / 10;
+                                xstep = (v.getxFinal() - v.getxInit()) / 15;
+                                ystep = (v.getyFinal() - v.getyInit()) / 15;
                                 if (v.yInit > -128) {
                                     while (v.xInit < 200) {
                                         v.xInit += xstep;
@@ -160,8 +158,8 @@ public class ParkingUI extends javax.swing.JFrame {
                         case 3:
                             v.setFinal(350, -310);
                             for (int j = 0; j < 10; j++) {
-                                xstep = (v.getxFinal() - v.getxInit()) / 10;
-                                ystep = (v.getyFinal() - v.getyInit()) / 10;
+                                xstep = (v.getxFinal() - v.getxInit()) / 15;
+                                ystep = (v.getyFinal() - v.getyInit()) / 15;
                                 if (v.yInit > -310) {
                                     while (v.xInit < 200) {
                                         v.xInit += xstep;
@@ -196,8 +194,8 @@ public class ParkingUI extends javax.swing.JFrame {
                         case 4:
                             v.setFinal(350, -219);
                             for (int j = 0; j < 10; j++) {
-                                xstep = (v.getxFinal() - v.getxInit()) / 10;
-                                ystep = (v.getyFinal() - v.getyInit()) / 10;
+                                xstep = (v.getxFinal() - v.getxInit()) / 15;
+                                ystep = (v.getyFinal() - v.getyInit()) / 15;
                                 if (v.yInit > -219) {
                                     while (v.xInit < 200) {
                                         v.xInit += xstep;
@@ -232,8 +230,8 @@ public class ParkingUI extends javax.swing.JFrame {
                         case 5:
                             v.setFinal(350, -128);
                             for (int j = 0; j < 10; j++) {
-                                xstep = (v.getxFinal() - v.getxInit()) / 10;
-                                ystep = (v.getyFinal() - v.getyInit()) / 10;
+                                xstep = (v.getxFinal() - v.getxInit()) / 15;
+                                ystep = (v.getyFinal() - v.getyInit()) / 15;
                                 if (v.yInit > -128) {
                                     while (v.xInit < 200) {
                                         v.xInit += xstep;
@@ -268,8 +266,8 @@ public class ParkingUI extends javax.swing.JFrame {
                         case 6:
                             v.setFinal(550, -310);
                             for (int j = 0; j < 10; j++) {
-                                xstep = (v.getxFinal() - v.getxInit()) / 10;
-                                ystep = (v.getyFinal() - v.getyInit()) / 10;
+                                xstep = (v.getxFinal() - v.getxInit()) / 15;
+                                ystep = (v.getyFinal() - v.getyInit()) / 15;
                                 if (v.yInit > -310) {
                                     while (v.xInit < 750) {
                                         v.xInit += xstep;
@@ -304,8 +302,8 @@ public class ParkingUI extends javax.swing.JFrame {
                         case 7:
                             v.setFinal(550, -219);
                             for (int j = 0; j < 10; j++) {
-                                xstep = (v.getxFinal() - v.getxInit()) / 10;
-                                ystep = (v.getyFinal() - v.getyInit()) / 10;
+                                xstep = (v.getxFinal() - v.getxInit()) / 15;
+                                ystep = (v.getyFinal() - v.getyInit()) / 15;
                                 if (v.yInit > -219) {
                                     while (v.xInit < 750) {
                                         v.xInit += xstep;
@@ -340,8 +338,8 @@ public class ParkingUI extends javax.swing.JFrame {
                         case 8:
                             v.setFinal(550, -128);
                             for (int j = 0; j < 10; j++) {
-                                xstep = (v.getxFinal() - v.getxInit()) / 10;
-                                ystep = (v.getyFinal() - v.getyInit()) / 10;
+                                xstep = (v.getxFinal() - v.getxInit()) / 15;
+                                ystep = (v.getyFinal() - v.getyInit()) / 15;
                                 if (v.yInit > -128) {
                                     while (v.xInit < 750) {
                                         v.xInit += xstep;
@@ -376,8 +374,8 @@ public class ParkingUI extends javax.swing.JFrame {
                         case 9:
                             v.setFinal(900, -310);
                             for (int j = 0; j < 10; j++) {
-                                xstep = (v.getxFinal() - v.getxInit()) / 10;
-                                ystep = (v.getyFinal() - v.getyInit()) / 10;
+                                xstep = (v.getxFinal() - v.getxInit()) / 15;
+                                ystep = (v.getyFinal() - v.getyInit()) / 15;
                                 if (v.yInit > -310) {
                                     while (v.xInit < 750) {
                                         v.xInit += xstep;
@@ -412,8 +410,8 @@ public class ParkingUI extends javax.swing.JFrame {
                         case 10:
                             v.setFinal(900, -219);
                             for (int j = 0; j < 10; j++) {
-                                xstep = (v.getxFinal() - v.getxInit()) / 10;
-                                ystep = (v.getyFinal() - v.getyInit()) / 10;
+                                xstep = (v.getxFinal() - v.getxInit()) / 15;
+                                ystep = (v.getyFinal() - v.getyInit()) / 15;
                                 if (v.yInit > -219) {
                                     while (v.xInit < 750) {
                                         v.xInit += xstep;
@@ -448,8 +446,8 @@ public class ParkingUI extends javax.swing.JFrame {
                         case 11:
                             v.setFinal(900, -128);
                             for (int j = 0; j < 10; j++) {
-                                xstep = (v.getxFinal() - v.getxInit()) / 10;
-                                ystep = (v.getyFinal() - v.getyInit()) / 10;
+                                xstep = (v.getxFinal() - v.getxInit()) / 15;
+                                ystep = (v.getyFinal() - v.getyInit()) / 15;
                                 if (v.yInit > -128) {
                                     while (v.xInit < 750) {
                                         v.xInit += xstep;
@@ -484,8 +482,8 @@ public class ParkingUI extends javax.swing.JFrame {
                         case 12:
                             v.setFinal(15, 123);
                             for (int j = 0; j < 10; j++) {
-                                xstep = (v.getxFinal() - v.getxInit()) / 10;
-                                ystep = (v.getyFinal() - v.getyInit()) / 10;
+                                xstep = (v.getxFinal() - v.getxInit()) / 15;
+                                ystep = (v.getyFinal() - v.getyInit()) / 15;
                                 if (v.yInit < 123) {
                                     while (v.xInit < 200) {
                                         v.xInit += xstep;
@@ -520,8 +518,8 @@ public class ParkingUI extends javax.swing.JFrame {
                         case 13:
                             v.setFinal(15, 214);
                             for (int j = 0; j < 10; j++) {
-                                xstep = (v.getxFinal() - v.getxInit()) / 10;
-                                ystep = (v.getyFinal() - v.getyInit()) / 10;
+                                xstep = (v.getxFinal() - v.getxInit()) / 15;
+                                ystep = (v.getyFinal() - v.getyInit()) / 15;
                                 if (v.yInit < 214) {
                                     while (v.xInit < 200) {
                                         v.xInit += xstep;
@@ -556,8 +554,8 @@ public class ParkingUI extends javax.swing.JFrame {
                         case 14:
                             v.setFinal(15, 310);
                             for (int j = 0; j < 10; j++) {
-                                xstep = (v.getxFinal() - v.getxInit()) / 10;
-                                ystep = (v.getyFinal() - v.getyInit()) / 10;
+                                xstep = (v.getxFinal() - v.getxInit()) / 15;
+                                ystep = (v.getyFinal() - v.getyInit()) / 15;
                                 if (v.yInit < 310) {
                                     while (v.xInit < 200) {
                                         v.xInit += xstep;
@@ -592,8 +590,8 @@ public class ParkingUI extends javax.swing.JFrame {
                         case 15:
                             v.setFinal(350, 123);
                             for (int j = 0; j < 10; j++) {
-                                xstep = (v.getxFinal() - v.getxInit()) / 10;
-                                ystep = (v.getyFinal() - v.getyInit()) / 10;
+                                xstep = (v.getxFinal() - v.getxInit()) / 15;
+                                ystep = (v.getyFinal() - v.getyInit()) / 15;
                                 if (v.yInit < 123) {
                                     while (v.xInit < 200) {
                                         v.xInit += xstep;
@@ -628,8 +626,8 @@ public class ParkingUI extends javax.swing.JFrame {
                         case 16:
                             v.setFinal(350, 214);
                             for (int j = 0; j < 10; j++) {
-                                xstep = (v.getxFinal() - v.getxInit()) / 10;
-                                ystep = (v.getyFinal() - v.getyInit()) / 10;
+                                xstep = (v.getxFinal() - v.getxInit()) / 15;
+                                ystep = (v.getyFinal() - v.getyInit()) / 15;
                                 if (v.yInit < 214) {
                                     while (v.xInit < 200) {
                                         v.xInit += xstep;
@@ -664,8 +662,8 @@ public class ParkingUI extends javax.swing.JFrame {
                         case 17:
                             v.setFinal(350, 310);
                             for (int j = 0; j < 10; j++) {
-                                xstep = (v.getxFinal() - v.getxInit()) / 10;
-                                ystep = (v.getyFinal() - v.getyInit()) / 10;
+                                xstep = (v.getxFinal() - v.getxInit()) / 15;
+                                ystep = (v.getyFinal() - v.getyInit()) / 15;
                                 if (v.yInit < 310) {
                                     while (v.xInit < 200) {
                                         v.xInit += xstep;
@@ -700,8 +698,8 @@ public class ParkingUI extends javax.swing.JFrame {
                         case 18:
                             v.setFinal(550, 123);
                             for (int j = 0; j < 10; j++) {
-                                xstep = (v.getxFinal() - v.getxInit()) / 10;
-                                ystep = (v.getyFinal() - v.getyInit()) / 10;
+                                xstep = (v.getxFinal() - v.getxInit()) / 15;
+                                ystep = (v.getyFinal() - v.getyInit()) / 15;
                                 if (v.yInit < 123) {
                                     while (v.xInit < 750) {
                                         v.xInit += xstep;
@@ -736,8 +734,8 @@ public class ParkingUI extends javax.swing.JFrame {
                         case 19:
                             v.setFinal(550, 214);
                             for (int j = 0; j < 10; j++) {
-                                xstep = (v.getxFinal() - v.getxInit()) / 10;
-                                ystep = (v.getyFinal() - v.getyInit()) / 10;
+                                xstep = (v.getxFinal() - v.getxInit()) / 15;
+                                ystep = (v.getyFinal() - v.getyInit()) / 15;
                                 if (v.yInit < 214) {
                                     while (v.xInit < 750) {
                                         v.xInit += xstep;
@@ -772,8 +770,8 @@ public class ParkingUI extends javax.swing.JFrame {
                         case 20:
                             v.setFinal(550, 310);
                             for (int j = 0; j < 10; j++) {
-                                xstep = (v.getxFinal() - v.getxInit()) / 10;
-                                ystep = (v.getyFinal() - v.getyInit()) / 10;
+                                xstep = (v.getxFinal() - v.getxInit()) / 15;
+                                ystep = (v.getyFinal() - v.getyInit()) / 15;
                                 if (v.yInit < 310) {
                                     while (v.xInit < 750) {
                                         v.xInit += xstep;
@@ -808,8 +806,8 @@ public class ParkingUI extends javax.swing.JFrame {
                         case 21:
                             v.setFinal(900, 123);
                             for (int j = 0; j < 10; j++) {
-                                xstep = (v.getxFinal() - v.getxInit()) / 10;
-                                ystep = (v.getyFinal() - v.getyInit()) / 10;
+                                xstep = (v.getxFinal() - v.getxInit()) / 15;
+                                ystep = (v.getyFinal() - v.getyInit()) / 15;
                                 if (v.yInit < 123) {
                                     while (v.xInit < 750) {
                                         v.xInit += xstep;
@@ -844,8 +842,8 @@ public class ParkingUI extends javax.swing.JFrame {
                         case 22:
                             v.setFinal(900, 214);
                             for (int j = 0; j < 10; j++) {
-                                xstep = (v.getxFinal() - v.getxInit()) / 10;
-                                ystep = (v.getyFinal() - v.getyInit()) / 10;
+                                xstep = (v.getxFinal() - v.getxInit()) / 15;
+                                ystep = (v.getyFinal() - v.getyInit()) / 15;
                                 if (v.yInit < 214) {
                                     while (v.xInit < 750) {
                                         v.xInit += xstep;
@@ -880,8 +878,8 @@ public class ParkingUI extends javax.swing.JFrame {
                         case 23:
                             v.setFinal(900, 310);
                             for (int j = 0; j < 10; j++) {
-                                xstep = (v.getxFinal() - v.getxInit()) / 10;
-                                ystep = (v.getyFinal() - v.getyInit()) / 10;
+                                xstep = (v.getxFinal() - v.getxInit()) / 15;
+                                ystep = (v.getyFinal() - v.getyInit()) / 15;
                                 if (v.yInit < 310) {
                                     while (v.xInit < 750) {
                                         v.xInit += xstep;
@@ -934,11 +932,11 @@ public class ParkingUI extends javax.swing.JFrame {
                         case 0:
                             v.setFinal(0, 0);
                             for (int j = 0; j < 10; j++) {
-                                xstep = (v.getxFinal() - v.getxInit()) / 10;
-                                ystep = (v.getyFinal() - v.getyInit()) / 10;
+                                xstep = (v.getxFinal() - v.getxInit()) / 15;
+                                ystep = (v.getyFinal() - v.getyInit()) / 15;
                                 if (v.yInit < 0) {
                                     while (v.xInit < 200) {
-                                        v.xInit += xstep;
+                                        v.xInit -= xstep;
                                         parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
                                         try {
                                             Thread.sleep(25);
@@ -957,7 +955,7 @@ public class ParkingUI extends javax.swing.JFrame {
                                     }
                                 }
                                 while (v.xInit > 0) {
-                                    v.xInit -= xstep;
+                                    v.xInit += xstep;
                                     parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
                                     try {
                                         Thread.sleep(25);
@@ -966,15 +964,16 @@ public class ParkingUI extends javax.swing.JFrame {
                                     }
                                 }
                             }
+                            parkingLabels[i].setIcon(null);
                             break;
                         case 1:
                             v.setFinal(0, 0);
                             for (int j = 0; j < 10; j++) {
-                                xstep = (v.getxFinal() - v.getxInit()) / 10;
-                                ystep = (v.getyFinal() - v.getyInit()) / 10;
+                                xstep = (v.getxFinal() - v.getxInit()) / 15;
+                                ystep = (v.getyFinal() - v.getyInit()) / 15;
                                 if (v.yInit < 0) {
                                     while (v.xInit < 200) {
-                                        v.xInit += xstep;
+                                        v.xInit -= xstep;
                                         parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
                                         try {
                                             Thread.sleep(25);
@@ -993,7 +992,7 @@ public class ParkingUI extends javax.swing.JFrame {
                                     }
                                 }
                                 while (v.xInit > 0) {
-                                    v.xInit -= xstep;
+                                    v.xInit += xstep;
                                     parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
                                     try {
                                         Thread.sleep(25);
@@ -1002,14 +1001,52 @@ public class ParkingUI extends javax.swing.JFrame {
                                     }
                                 }
                             }
+                            parkingLabels[i].setIcon(null);
                             break;
                         case 2:
                             v.setFinal(0, 0);
                             for (int j = 0; j < 10; j++) {
-                                xstep = (v.getxFinal() - v.getxInit()) / 10;
-                                ystep = (v.getyFinal() - v.getyInit()) / 10;
+                                xstep = (v.getxFinal() - v.getxInit()) / 15;
+                                ystep = (v.getyFinal() - v.getyInit()) / 15;
                                 if (v.yInit < 0) {
                                     while (v.xInit < 200) {
+                                        v.xInit -= xstep;
+                                        parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
+                                        try {
+                                            Thread.sleep(25);
+                                        } catch (InterruptedException e) {
+                                            e.printStackTrace();
+                                        }
+                                    }
+                                }
+                                while (v.yInit < 0) {
+                                    v.yInit += ystep;
+                                    parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
+                                    try {
+                                        Thread.sleep(25);
+                                    } catch (InterruptedException e) {
+                                        e.printStackTrace();
+                                    }
+                                }
+                                while (v.xInit > 0) {
+                                    v.xInit += xstep;
+                                    parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
+                                    try {
+                                        Thread.sleep(25);
+                                    } catch (InterruptedException e) {
+                                        e.printStackTrace();
+                                    }
+                                }
+                            }
+                            parkingLabels[i].setIcon(null);
+                            break;
+                        case 3:
+                            v.setFinal(0, 0);
+                            for (int j = 0; j < 10; j++) {
+                                xstep = (v.getxFinal() - v.getxInit()) / 15;
+                                ystep = (v.getyFinal() - v.getyInit()) / 15;
+                                if (v.yInit < 0) {
+                                    while (v.xInit > 200) {
                                         v.xInit += xstep;
                                         parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
                                         try {
@@ -1029,7 +1066,7 @@ public class ParkingUI extends javax.swing.JFrame {
                                     }
                                 }
                                 while (v.xInit > 0) {
-                                    v.xInit -= xstep;
+                                    v.xInit += xstep;
                                     parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
                                     try {
                                         Thread.sleep(25);
@@ -1038,51 +1075,16 @@ public class ParkingUI extends javax.swing.JFrame {
                                     }
                                 }
                             }
-                            break;
-                        case 3:
-                            v.setFinal(0, 0);
-                            for (int j = 0; j < 10; j++) {
-                                xstep = (v.getxFinal() - v.getxInit()) / 10;
-                                ystep = (v.getyFinal() - v.getyInit()) / 10;
-                                if (v.yInit < 0) {
-                                    while (v.xInit > 200) {
-                                        v.xInit -= xstep;
-                                        parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
-                                        try {
-                                            Thread.sleep(25);
-                                        } catch (InterruptedException e) {
-                                            e.printStackTrace();
-                                        }
-                                    }
-                                }
-                                while (v.yInit < 0) {
-                                    v.yInit += ystep;
-                                    parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
-                                    try {
-                                        Thread.sleep(25);
-                                    } catch (InterruptedException e) {
-                                        e.printStackTrace();
-                                    }
-                                }
-                                while (v.xInit > 0) {
-                                    v.xInit -= xstep;
-                                    parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
-                                    try {
-                                        Thread.sleep(25);
-                                    } catch (InterruptedException e) {
-                                        e.printStackTrace();
-                                    }
-                                }
-                            }
+                            parkingLabels[i].setIcon(null);
                             break;
                         case 4:
                             v.setFinal(0, 0);
                             for (int j = 0; j < 10; j++) {
-                                xstep = (v.getxFinal() - v.getxInit()) / 10;
-                                ystep = (v.getyFinal() - v.getyInit()) / 10;
+                                xstep = (v.getxFinal() - v.getxInit()) / 15;
+                                ystep = (v.getyFinal() - v.getyInit()) / 15;
                                 if (v.yInit < 0) {
                                     while (v.xInit > 200) {
-                                        v.xInit -= xstep;
+                                        v.xInit += xstep;
                                         parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
                                         try {
                                             Thread.sleep(25);
@@ -1101,7 +1103,7 @@ public class ParkingUI extends javax.swing.JFrame {
                                     }
                                 }
                                 while (v.xInit > 0) {
-                                    v.xInit -= xstep;
+                                    v.xInit += xstep;
                                     parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
                                     try {
                                         Thread.sleep(25);
@@ -1110,15 +1112,16 @@ public class ParkingUI extends javax.swing.JFrame {
                                     }
                                 }
                             }
+                            parkingLabels[i].setIcon(null);
                             break;
                         case 5:
                             v.setFinal(0, 0);
                             for (int j = 0; j < 10; j++) {
-                                xstep = (v.getxFinal() - v.getxInit()) / 10;
-                                ystep = (v.getyFinal() - v.getyInit()) / 10;
+                                xstep = (v.getxFinal() - v.getxInit()) / 15;
+                                ystep = (v.getyFinal() - v.getyInit()) / 15;
                                 if (v.yInit < 0) {
                                     while (v.xInit > 200) {
-                                        v.xInit -= xstep;
+                                        v.xInit += xstep;
                                         parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
                                         try {
                                             Thread.sleep(25);
@@ -1137,7 +1140,7 @@ public class ParkingUI extends javax.swing.JFrame {
                                     }
                                 }
                                 while (v.xInit > 0) {
-                                    v.xInit -= xstep;
+                                    v.xInit += xstep;
                                     parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
                                     try {
                                         Thread.sleep(25);
@@ -1146,12 +1149,13 @@ public class ParkingUI extends javax.swing.JFrame {
                                     }
                                 }
                             }
+                            parkingLabels[i].setIcon(null);
                             break;
                         case 6:
                             v.setFinal(0, 0);
                             for (int j = 0; j < 10; j++) {
-                                xstep = (v.getxFinal() - v.getxInit()) / 10;
-                                ystep = (v.getyFinal() - v.getyInit()) / 10;
+                                xstep = (v.getxFinal() - v.getxInit()) / 15;
+                                ystep = (v.getyFinal() - v.getyInit()) / 15;
                                 if (v.yInit < 0) {
                                     while (v.xInit > 750) {
                                         v.xInit -= xstep;
@@ -1173,7 +1177,7 @@ public class ParkingUI extends javax.swing.JFrame {
                                     }
                                 }
                                 while (v.xInit > 0) {
-                                    v.xInit -= xstep;
+                                    v.xInit += xstep;
                                     parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
                                     try {
                                         Thread.sleep(25);
@@ -1182,12 +1186,13 @@ public class ParkingUI extends javax.swing.JFrame {
                                     }
                                 }
                             }
+                            parkingLabels[i].setIcon(null);
                             break;
                         case 7:
                             v.setFinal(0, 0);
                             for (int j = 0; j < 10; j++) {
-                                xstep = (v.getxFinal() - v.getxInit()) / 10;
-                                ystep = (v.getyFinal() - v.getyInit()) / 10;
+                                xstep = (v.getxFinal() - v.getxInit()) / 15;
+                                ystep = (v.getyFinal() - v.getyInit()) / 15;
                                 if (v.yInit < 0) {
                                     while (v.xInit > 750) {
                                         v.xInit -= xstep;
@@ -1209,7 +1214,7 @@ public class ParkingUI extends javax.swing.JFrame {
                                     }
                                 }
                                 while (v.xInit > 0) {
-                                    v.xInit -= xstep;
+                                    v.xInit += xstep;
                                     parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
                                     try {
                                         Thread.sleep(25);
@@ -1218,12 +1223,13 @@ public class ParkingUI extends javax.swing.JFrame {
                                     }
                                 }
                             }
+                            parkingLabels[i].setIcon(null);
                             break;
                         case 8:
                             v.setFinal(0, 0);
                             for (int j = 0; j < 10; j++) {
-                                xstep = (v.getxFinal() - v.getxInit()) / 10;
-                                ystep = (v.getyFinal() - v.getyInit()) / 10;
+                                xstep = (v.getxFinal() - v.getxInit()) / 15;
+                                ystep = (v.getyFinal() - v.getyInit()) / 15;
                                 if (v.yInit < 0) {
                                     while (v.xInit > 750) {
                                         v.xInit -= xstep;
@@ -1245,7 +1251,7 @@ public class ParkingUI extends javax.swing.JFrame {
                                     }
                                 }
                                 while (v.xInit > 0) {
-                                    v.xInit -= xstep;
+                                    v.xInit += xstep;
                                     parkingLabels[i].setBounds(v.xInit, v.yInit, 1058, 794);
                                     try {
                                         Thread.sleep(25);
@@ -1254,12 +1260,13 @@ public class ParkingUI extends javax.swing.JFrame {
                                     }
                                 }
                             }
+                            parkingLabels[i].setIcon(null);
                             break;
                         case 9:
                             v.setFinal(0, 0);
                             for (int j = 0; j < 10; j++) {
-                                xstep = (v.getxFinal() - v.getxInit()) / 10;
-                                ystep = (v.getyFinal() - v.getyInit()) / 10;
+                                xstep = (v.getxFinal() - v.getxInit()) / 15;
+                                ystep = (v.getyFinal() - v.getyInit()) / 15;
                                 if (v.yInit < 0) {
                                     while (v.xInit > 750) {
                                         v.xInit -= xstep;
@@ -1294,8 +1301,8 @@ public class ParkingUI extends javax.swing.JFrame {
                         case 10:
                             v.setFinal(0, 0);
                             for (int j = 0; j < 10; j++) {
-                                xstep = (v.getxFinal() - v.getxInit()) / 10;
-                                ystep = (v.getyFinal() - v.getyInit()) / 10;
+                                xstep = (v.getxFinal() - v.getxInit()) / 15;
+                                ystep = (v.getyFinal() - v.getyInit()) / 15;
                                 if (v.yInit < 0) {
                                     while (v.xInit > 750) {
                                         v.xInit -= xstep;
@@ -1330,8 +1337,8 @@ public class ParkingUI extends javax.swing.JFrame {
                         case 11:
                             v.setFinal(0, 0);
                             for (int j = 0; j < 10; j++) {
-                                xstep = (v.getxFinal() - v.getxInit()) / 10;
-                                ystep = (v.getyFinal() - v.getyInit()) / 10;
+                                xstep = (v.getxFinal() - v.getxInit()) / 15;
+                                ystep = (v.getyFinal() - v.getyInit()) / 15;
                                 if (v.yInit < 0) {
                                     while (v.xInit > 750) {
                                         v.xInit -= xstep;
@@ -1366,8 +1373,8 @@ public class ParkingUI extends javax.swing.JFrame {
                         case 12:
                             v.setFinal(0, 0);
                             for (int j = 0; j < 10; j++) {
-                                xstep = (v.getxFinal() - v.getxInit()) / 10;
-                                ystep = (v.getyFinal() - v.getyInit()) / 10;
+                                xstep = (v.getxFinal() - v.getxInit()) / 15;
+                                ystep = (v.getyFinal() - v.getyInit()) / 15;
                                 if (v.yInit > 0) {
                                     while (v.xInit < 200) {
                                         v.xInit += xstep;
@@ -1402,8 +1409,8 @@ public class ParkingUI extends javax.swing.JFrame {
                         case 13:
                             v.setFinal(0, 0);
                             for (int j = 0; j < 10; j++) {
-                                xstep = (v.getxFinal() - v.getxInit()) / 10;
-                                ystep = (v.getyFinal() - v.getyInit()) / 10;
+                                xstep = (v.getxFinal() - v.getxInit()) / 15;
+                                ystep = (v.getyFinal() - v.getyInit()) / 15;
                                 if (v.yInit > 0) {
                                     while (v.xInit < 200) {
                                         v.xInit += xstep;
@@ -1438,8 +1445,8 @@ public class ParkingUI extends javax.swing.JFrame {
                         case 14:
                             v.setFinal(0, 0);
                             for (int j = 0; j < 10; j++) {
-                                xstep = (v.getxFinal() - v.getxInit()) / 10;
-                                ystep = (v.getyFinal() - v.getyInit()) / 10;
+                                xstep = (v.getxFinal() - v.getxInit()) / 15;
+                                ystep = (v.getyFinal() - v.getyInit()) / 15;
                                 if (v.yInit > 0) {
                                     while (v.xInit < 200) {
                                         v.xInit += xstep;
@@ -1474,8 +1481,8 @@ public class ParkingUI extends javax.swing.JFrame {
                         case 15:
                             v.setFinal(0, 0);
                             for (int j = 0; j < 10; j++) {
-                                xstep = (v.getxFinal() - v.getxInit()) / 10;
-                                ystep = (v.getyFinal() - v.getyInit()) / 10;
+                                xstep = (v.getxFinal() - v.getxInit()) / 15;
+                                ystep = (v.getyFinal() - v.getyInit()) / 15;
                                 if (v.yInit > 0) {
                                     while (v.xInit > 200) {
                                         v.xInit -= xstep;
@@ -1510,8 +1517,8 @@ public class ParkingUI extends javax.swing.JFrame {
                         case 16:
                             v.setFinal(0, 0);
                             for (int j = 0; j < 10; j++) {
-                                xstep = (v.getxFinal() - v.getxInit()) / 10;
-                                ystep = (v.getyFinal() - v.getyInit()) / 10;
+                                xstep = (v.getxFinal() - v.getxInit()) / 15;
+                                ystep = (v.getyFinal() - v.getyInit()) / 15;
                                 if (v.yInit > 0) {
                                     while (v.xInit > 200) {
                                         v.xInit -= xstep;
@@ -1546,8 +1553,8 @@ public class ParkingUI extends javax.swing.JFrame {
                         case 17:
                             v.setFinal(0, 0);
                             for (int j = 0; j < 10; j++) {
-                                xstep = (v.getxFinal() - v.getxInit()) / 10;
-                                ystep = (v.getyFinal() - v.getyInit()) / 10;
+                                xstep = (v.getxFinal() - v.getxInit()) / 15;
+                                ystep = (v.getyFinal() - v.getyInit()) / 15;
                                 if (v.yInit > 0) {
                                     while (v.xInit > 200) {
                                         v.xInit -= xstep;
@@ -1582,8 +1589,8 @@ public class ParkingUI extends javax.swing.JFrame {
                         case 18:
                             v.setFinal(0, 0);
                             for (int j = 0; j < 10; j++) {
-                                xstep = (v.getxFinal() - v.getxInit()) / 10;
-                                ystep = (v.getyFinal() - v.getyInit()) / 10;
+                                xstep = (v.getxFinal() - v.getxInit()) / 15;
+                                ystep = (v.getyFinal() - v.getyInit()) / 15;
                                 if (v.yInit > 0) {
                                     while (v.xInit < 750) {
                                         v.xInit += xstep;
@@ -1618,8 +1625,8 @@ public class ParkingUI extends javax.swing.JFrame {
                         case 19:
                             v.setFinal(0, 0);
                             for (int j = 0; j < 10; j++) {
-                                xstep = (v.getxFinal() - v.getxInit()) / 10;
-                                ystep = (v.getyFinal() - v.getyInit()) / 10;
+                                xstep = (v.getxFinal() - v.getxInit()) / 15;
+                                ystep = (v.getyFinal() - v.getyInit()) / 15;
                                 if (v.yInit > 0) {
                                     while (v.xInit < 750) {
                                         v.xInit += xstep;
@@ -1654,8 +1661,8 @@ public class ParkingUI extends javax.swing.JFrame {
                         case 20:
                             v.setFinal(0, 0);
                             for (int j = 0; j < 10; j++) {
-                                xstep = (v.getxFinal() - v.getxInit()) / 10;
-                                ystep = (v.getyFinal() - v.getyInit()) / 10;
+                                xstep = (v.getxFinal() - v.getxInit()) / 15;
+                                ystep = (v.getyFinal() - v.getyInit()) / 15;
                                 if (v.yInit > 0) {
                                     while (v.xInit < 750) {
                                         v.xInit += xstep;
@@ -1690,8 +1697,8 @@ public class ParkingUI extends javax.swing.JFrame {
                         case 21:
                             v.setFinal(0, 0);
                             for (int j = 0; j < 10; j++) {
-                                xstep = (v.getxFinal() - v.getxInit()) / 10;
-                                ystep = (v.getyFinal() - v.getyInit()) / 10;
+                                xstep = (v.getxFinal() - v.getxInit()) / 15;
+                                ystep = (v.getyFinal() - v.getyInit()) / 15;
                                 if (v.yInit > 0) {
                                     while (v.xInit > 750) {
                                         v.xInit -= xstep;
@@ -1726,8 +1733,8 @@ public class ParkingUI extends javax.swing.JFrame {
                         case 22:
                             v.setFinal(0, 0);
                             for (int j = 0; j < 10; j++) {
-                                xstep = (v.getxFinal() - v.getxInit()) / 10;
-                                ystep = (v.getyFinal() - v.getyInit()) / 10;
+                                xstep = (v.getxFinal() - v.getxInit()) / 15;
+                                ystep = (v.getyFinal() - v.getyInit()) / 15;
                                 if (v.yInit > 0) {
                                     while (v.xInit > 750) {
                                         v.xInit -= xstep;
@@ -1762,8 +1769,8 @@ public class ParkingUI extends javax.swing.JFrame {
                         case 23:
                             v.setFinal(0, 0);
                             for (int j = 0; j < 10; j++) {
-                                xstep = (v.getxFinal() - v.getxInit()) / 10;
-                                ystep = (v.getyFinal() - v.getyInit()) / 10;
+                                xstep = (v.getxFinal() - v.getxInit()) / 15;
+                                ystep = (v.getyFinal() - v.getyInit()) / 15;
                                 if (v.yInit > 0) {
                                     while (v.xInit > 750) {
                                         v.xInit -= xstep;
